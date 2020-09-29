@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Spartan', sans-serif;
+}
+
+body:before {
+	content: '';
+	position: absolute;
+	background-image: url('images/bg-pattern-top-desktop.svg');
+	width: 584px;
+	height: 362px; 
+	z-index: -1;
+}
+
+body:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-image: url('images/bg-pattern-bottom-desktop.svg');
+	width: 1085px;
+	height: 673px;
+	z-index: -1;
+}
+
+.layout {
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: grid;
+}
+
+.col-1 {
+	grid-column: 1 / 2;
+	grid-row: 1;
+}
+.col-2 { 
+	grid-column: 2 / 2;
+	grid-row: 1;
+}
+
+
+.wrapper {
+	padding-top: 140px;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 700;
+	color: #512051;
+}
+
+.content-title p {
+	color: #512051;
+	font-size: 15px;
+	line-height: 25px;
+	margin-top: 10px;
+}
+
+.content-stars span {
+	font-size: 13px;
+	margin-left: 30px;
+	color: #512051;
+	font-weight: 700;
+}
+
+.style-star {
+	background-color: #F7F2F7;
+	max-width: 445px;
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+.star-1 {
+	padding-left: 30px;
+}
+
+.star-2 {
+	
+	padding-left: 30px;
+	margin-left: 50px;
+}
+
+.star-3 {
+	
+	padding-left: 30px;
+	margin-left: 100px;
+}
+
+.star {
+	background-image: url('images/icon-star.svg');
+	width: 17px;
+	height: 16px;
+	display: inline-block;
+	margin: 0 2px;
+}
+
+
+.content-card .wrapper {
+	grid-column-gap: 20px;
+	padding-top: 80px;
+}
+
+
+.card-col-1 {
+	grid-column: auto;
+	grid-row: 1;
+}
+.card-col-2 { 
+	grid-column: auto;
+	grid-row: 1;
+	margin-top: 15px;
+}
+.card-col-3 { 
+	grid-column: auto;
+	grid-row: 1;
+	margin-top: 30px;
+}
+
+.card {
+	background-color: #512051;
+	border-radius: 8px;
+	color: white;
+	padding: 40px 30px;
+}
+
+.card-user img {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 0;
+	border-radius: 50%; 
+}
+
+.card-name {
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.card-status {
+	font-weight: 400;
+	font-size: 13px;
+	color: #EE69A4;
+}
+
+.card-user {
+	position: relative; 
+	padding-left: 65px;
+	margin-bottom: 25px;
+}
+
+.card p {
+	font-size: 13px;
+	line-height: 22px;
+}
